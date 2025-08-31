@@ -47,3 +47,7 @@ export interface BaseMovieListProps {
   movies: BaseMovieProps[];
   selectFavourite: (movieId: number) => void; 
 }
+
+export interface MovieListPageTemplateProps extends BaseMovieListProps {
+  title: string;
+}
