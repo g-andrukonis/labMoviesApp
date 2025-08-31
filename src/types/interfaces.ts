@@ -16,6 +16,7 @@ export interface BaseMovieProps {
     vote_count: number;
     favourite?: boolean;
     movies: BaseMovieProps[];
+    genre_ids?: number[];
   }
 
   export interface MovieDetailsProps extends BaseMovieProps {
@@ -39,3 +40,5 @@ export interface MoviePageProps {
   movie: MovieDetailsProps;
   images: MovieImage[];
 }
+
+export type FilterOption = "title" | "genre";
